@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:github": "rm -r ./docs ; ng build --base-href ./;  mv ./dist/gif-app/browser ./docs"
   },
   "private": true,
   "dependencies": {
